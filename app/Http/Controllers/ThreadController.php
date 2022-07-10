@@ -10,7 +10,7 @@ class ThreadController extends Controller
 {
     public function index()
     {
-        return view('thread.index');
+        return view('thread.index', ['threads'=>Thread::all()]);
     }
     
     public function create(Request $request)
